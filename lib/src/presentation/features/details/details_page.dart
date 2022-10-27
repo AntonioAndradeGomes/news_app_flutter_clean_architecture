@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:news_app_clean/shared/global_widgets/browser_icon.dart';
 import 'package:news_app_clean/src/domain/entities/article_entity.dart';
 import 'package:news_app_clean/src/presentation/features/details/components/build_title_date.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class DetailsPage extends StatelessWidget {
   final ArticleEntity article = Get.arguments;

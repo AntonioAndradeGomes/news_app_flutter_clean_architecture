@@ -28,4 +28,6 @@ class ArticleEntity {
     DateFormat dateFormat = DateFormat.yMd('pt_BR').add_Hm();
     return dateFormat.format(publishedAt.toLocal());
   }
+
+  Uri get urlParse => Uri.parse(url);
 }
